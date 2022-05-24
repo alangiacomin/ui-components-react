@@ -1,0 +1,45 @@
+{
+  "name": "@alangiacomin/ui-components-react",
+  "version": "0.0.0",
+  "description": "UI components React",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alangiacomin/ui-components-react.git"
+  },
+  "keywords": [
+    "javascript",
+    "utilities",
+    "react"
+  ],
+  "author": {
+    "name": "Alan Giacomin",
+    "email": "alan.giacomin@gmail.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint --ext .jsx src/**/*.{js,jsx}",
+    "lint:watch": "esw --watch --color --ext .jsx src/**/*.{js,jsx}"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.16.7",
+    "@testing-library/react": "^13.2.0",
+    "classnames": "^2.3.1",
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-react": "^7.30.0",
+    "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.0",
+    "prop-types": "^15.7.2",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "peerDependencies": {
+    "classnames": "^2.3.1",
+    "prop-types": "^15.7.2",
+    "react": "^18.1.0"
+  }
+}
