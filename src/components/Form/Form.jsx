@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
-import { forwardRef, useCallback, useMemo } from 'react';
+import { useCallback, useMemo } from 'react';
 import classnames from 'classnames';
 import { FormContext } from './FormContext';
 import CustomPropTypes from '../../common/CustomPropTypes';
 
-const Form = forwardRef(({
+const Form = ({
   className, data, errors, onChange, onSubmit, children,
-}, ref) => {
+}) => {
   const cns = useMemo(() => classnames(className), [className]);
 
   const providerValue = useMemo(() => ({
@@ -24,12 +24,12 @@ const Form = forwardRef(({
 
   return (
     <FormContext.Provider value={providerValue}>
-      <form className={cns} onSubmit={submitForm} ref={ref}>
+      <form className={cns} onSubmit={submitForm}>
         {children}
       </form>
     </FormContext.Provider>
   );
-});
+};
 
 Form.propTypes = {
   data: PropTypes.shape({}),
