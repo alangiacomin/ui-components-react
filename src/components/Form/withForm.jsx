@@ -6,11 +6,13 @@ const withForm = (Component) => function Wrapped(props) {
       {
         ({
           formData,
+          formErrors,
           onFormChange,
           onFormSubmit,
         }) => (
           <Component
             formData={formData}
+            formErrors={formErrors}
             onFormChange={onFormChange}
             onFormSubmit={onFormSubmit}
             {...props}
