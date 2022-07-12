@@ -1,6 +1,6 @@
 import { FormContext } from './FormContext';
 
-const withForm = (Component) => function Wrapped(props) {
+const withForm = (Component) => function wrapped(props) {
   return (
     <FormContext.Consumer>
       {
